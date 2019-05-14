@@ -21,6 +21,7 @@ class FeaturePlugin : Plugin<Project> {
         project.dependencies {
             add(implementation, project(Modules.Libraries.ui_components))
 
+            add(implementation, Libraries.material)
             add(implementation, Libraries.appCompat)
             add(implementation, Libraries.constraintLayout)
             add(implementation, Libraries.kotlin)

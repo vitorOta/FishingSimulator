@@ -15,6 +15,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = Configs.testInstrumentationRunner
+
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {

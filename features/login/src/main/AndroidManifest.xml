@@ -1,2 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vitorota.fishingsimulator.features.login" />
+          package="com.vitorota.fishingsimulator.features.login">
+    <application android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <!-- TODO add intent-filter -->
+        </activity>
+    </application>
+</manifest>

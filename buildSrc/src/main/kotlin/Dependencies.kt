@@ -26,6 +26,7 @@ object Versions {
     const val kotlin = "1.3.31"
     const val gradleVersion = "3.4.0"
 
+    const val material = "1.1.0-alpha06"
     const val appCompat = "1.0.2"
     const val kotlinExtensions = "1.0.2"
     const val constraintLayout = "1.1.3"
@@ -57,6 +58,7 @@ object Modules {
 }
 
 object Libraries {
+    const val material = "com.google.android.material:material:${Versions.material}"
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
     const val kotlinExtensions = "androidx.core:core-ktx:${Versions.kotlinExtensions}"
