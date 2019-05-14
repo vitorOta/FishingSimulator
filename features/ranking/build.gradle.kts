@@ -2,6 +2,7 @@ plugins {
     id(BuildPlugins.androidLibrary)
     id(BuildPlugins.kotlinAndroid)
 }
+apply<FeaturePlugin>()
 
 android {
     compileSdkVersion(Configs.compileSdkVersion)
@@ -25,13 +26,4 @@ android {
             )
         }
     }
-}
-
-dependencies {
-    implementation(Libraries.kotlin)
-
-    testImplementation(TestLibraries.jUnit)
-
-    androidTestImplementation(TestLibraries.androidTestRunner)
-    androidTestImplementation(TestLibraries.espresso)
 }

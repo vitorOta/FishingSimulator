@@ -30,7 +30,7 @@ android {
 
 dependencies {
 
-    implementation(project(":libraries:ui_components"))
+    implementation(project(Modules.Libraries.ui_components))
 
     implementation(Libraries.kotlin)
     implementation(Libraries.appCompat)

@@ -29,6 +29,7 @@ object Versions {
     const val appCompat = "1.0.2"
     const val kotlinExtensions = "1.0.2"
     const val constraintLayout = "1.1.3"
+    const val navigation = "2.1.0-alpha03"
 
     //test and androidTest
     const val jUnit = "4.12"
@@ -36,12 +37,35 @@ object Versions {
     const val espresso = "3.1.1"
 }
 
+object Modules {
+    //app
+    const val app = ":app"
+
+    object Features {
+        private const val prefix = ":features"
+        const val login = "$prefix:login"
+        const val game = "$prefix:game"
+        const val ranking = "$prefix:ranking"
+        const val about = "$prefix:about"
+    }
+
+    object Libraries {
+        private const val prefix = ":libraries"
+        const val ui_components = "$prefix:ui_components"
+        const val actions = "$prefix:actions"
+    }
+}
+
 object Libraries {
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
     const val kotlinExtensions = "androidx.core:core-ktx:${Versions.kotlinExtensions}"
     const val constraintLayout =
-        "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+            "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+
+    const val navigationFragment =
+            "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    const val navigationUI = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
 }
 
 object TestLibraries {

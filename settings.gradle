@@ -1,1 +1,0 @@
-include ':app', ':libraries:actions', ':libraries:ui_components', ':features:login', ':features:game', ':features:ranking', ':features:about'

@@ -1,0 +1,9 @@
+include(
+        Modules.app,
+        Modules.Libraries.actions,
+        Modules.Libraries.ui_components,
+        Modules.Features.login,
+        Modules.Features.game,
+        Modules.Features.ranking,
+        Modules.Features.about
+)
