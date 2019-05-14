@@ -1,16 +1,14 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-//I keep this as a .gradle file to AS recognize my project
-
 buildscript {
     repositories {
         google()
         jcenter()
-        
+
     }
     dependencies {
-        classpath BuildPlugins.androidGradlePlugin
-        classpath BuildPlugins.kotlinGradlePlugin
+        classpath(BuildPlugins.androidGradlePlugin)
+        classpath(BuildPlugins.kotlinGradlePlugin)
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -23,6 +21,6 @@ allprojects {
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+tasks.register<Delete>("clean") {
+    delete(rootProject.buildDir)
 }

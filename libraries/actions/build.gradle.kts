@@ -1,7 +1,6 @@
 plugins {
-    id(BuildPlugins.androidApplication)
+    id(BuildPlugins.androidLibrary)
     id(BuildPlugins.kotlinAndroid)
-    id(BuildPlugins.kotlinAndroidExtensions)
 }
 
 android {
@@ -29,13 +28,7 @@ android {
 }
 
 dependencies {
-
-    implementation(project(":libraries:ui_components"))
-
     implementation(Libraries.kotlin)
-    implementation(Libraries.appCompat)
-    implementation(Libraries.kotlinExtensions)
-    implementation(Libraries.constraintLayout)
 
     testImplementation(TestLibraries.jUnit)
 

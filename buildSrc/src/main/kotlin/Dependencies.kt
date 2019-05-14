@@ -38,7 +38,7 @@ object Versions {
 
 object Libraries {
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
-    const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
+    const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
     const val kotlinExtensions = "androidx.core:core-ktx:${Versions.kotlinExtensions}"
     const val constraintLayout =
         "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
