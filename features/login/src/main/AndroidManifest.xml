@@ -2,7 +2,10 @@
           package="com.vitorota.fishingsimulator.features.login">
     <application android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity">
-            <!-- TODO add intent-filter -->
+            <intent-filter>
+                <action android:name="com.vitorota.fishingsimulator.features.login.open"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </activity>
     </application>
 </manifest>

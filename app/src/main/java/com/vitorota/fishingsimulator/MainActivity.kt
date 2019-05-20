@@ -1,10 +1,8 @@
 package com.vitorota.fishingsimulator
 
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
+import com.vitorota.fishingsimulator.libraries.actions.Actions
 
 /**
  *
@@ -15,10 +13,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activiy_main)
-        val textView = findViewById<TextView>(R.id.textView)
-        findViewById<ImageView>(R.id.imageView).setOnClickListener {
-            textView.isVisible = !textView.isVisible
-        }
+        startActivity(Actions.openLoginIntent(this))
     }
 }
