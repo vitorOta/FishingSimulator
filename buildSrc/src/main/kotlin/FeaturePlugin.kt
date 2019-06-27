@@ -11,27 +11,37 @@ import org.gradle.kotlin.dsl.project
 class FeaturePlugin : Plugin<Project> {
     override fun apply(project: Project) {
         configureDependencies(project)
+        configurePlugins(project)
+
     }
 
-    fun configureDependencies(project: Project) {
-        val implementation = "implementation"
-        val testImplementation = "testImplementation"
-        val androidTestImplementation = "androidTestImplementation"
-
-        project.dependencies {
-            add(implementation, project(Modules.Libraries.ui_components))
-
-            add(implementation, Libraries.appCompat)
-            add(implementation, Libraries.constraintLayout)
-            add(implementation, Libraries.kotlin)
-            add(implementation, Libraries.kotlinExtensions)
-            add(implementation, Libraries.navigationFragment)
-            add(implementation, Libraries.navigationUI)
-
-            add(testImplementation, TestLibraries.jUnit)
-
-            add(androidTestImplementation, TestLibraries.androidTestRunner)
-            add(androidTestImplementation, TestLibraries.espresso)
+    private fun configurePlugins(project: Project) {
+        project.plugins.run {
+            apply(BuildPlugins.kotlinAndroidExtensions)
+            apply(BuildPlugins.navigationSafeArgs)
+            //TODO add the others plugins here
         }
+    }
+}
+
+private fun configureDependencies(project: Project) {
+    val implementation = "implementation"
+    val testImplementation = "testImplementation"
+    val androidTestImplementation = "androidTestImplementation"
+
+    project.dependencies {
+        add(implementation, project(Modules.Libraries.ui_components))
+
+        add(implementation, Libraries.appCompat)
+        add(implementation, Libraries.constraintLayout)
+        add(implementation, Libraries.kotlin)
+        add(implementation, Libraries.kotlinExtensions)
+        add(implementation, Libraries.navigationFragment)
+        add(implementation, Libraries.navigationUI)
+
+        add(testImplementation, TestLibraries.jUnit)
+
+        add(androidTestImplementation, TestLibraries.androidTestRunner)
+        add(androidTestImplementation, TestLibraries.espresso)
     }
 }

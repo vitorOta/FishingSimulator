@@ -6,12 +6,15 @@
 object BuildPlugins {
     const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.gradleVersion}"
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+    const val navigationSafeArgsGradlePlugin = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}"
 
     const val androidApplication = "com.android.application"
     const val androidLibrary = "com.android.library"
     const val kotlinAndroid = "kotlin-android"
     const val kotlinAndroidExtensions = "kotlin-android-extensions"
     const val kotlinKapt = "kotlin-kapt"
+    const val navigationSafeArgs = "androidx.navigation.safeargs.kotlin"
+
 }
 
 object Configs {
@@ -63,10 +66,10 @@ object Libraries {
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
     const val kotlinExtensions = "androidx.core:core-ktx:${Versions.kotlinExtensions}"
     const val constraintLayout =
-            "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+        "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
 
     const val navigationFragment =
-            "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+        "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     const val navigationUI = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
 }
 
