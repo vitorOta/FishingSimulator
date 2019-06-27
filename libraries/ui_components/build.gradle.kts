@@ -30,6 +30,7 @@ android {
 dependencies {
     implementation(Libraries.kotlin)
     implementation(Libraries.appCompat)
+    api(Libraries.material)
 
     testImplementation(TestLibraries.jUnit)
 

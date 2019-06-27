@@ -26,7 +26,7 @@ object Versions {
     const val kotlin = "1.3.40"
     const val gradleVersion = "3.4.1"
 
-    const val material = "1.1.0-alpha06"
+    const val material = "1.1.0-alpha07"
     const val appCompat = "1.0.2"
     const val kotlinExtensions = "1.0.2"
     const val constraintLayout = "1.1.3"
