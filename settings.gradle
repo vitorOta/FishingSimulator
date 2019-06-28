@@ -1,0 +1,7 @@
+include Modules.app
+include Modules.actions
+include Modules.ui_components
+include Modules.login
+include Modules.game
+include Modules.ranking
+include Modules.about

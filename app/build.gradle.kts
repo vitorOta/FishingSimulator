@@ -32,10 +32,10 @@ android {
 
 dependencies {
 
-    implementation(project(Modules.Libraries.ui_components))
-    implementation(project(Modules.Libraries.actions))
+    implementation(project(Modules.ui_components))
+    implementation(project(Modules.actions))
 
-    implementation(project(Modules.Features.login))
+    implementation(project(Modules.login))
 
     implementation(Libraries.kotlin)
     implementation(Libraries.appCompat)

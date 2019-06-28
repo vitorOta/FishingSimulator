@@ -45,19 +45,15 @@ object Modules {
     //app
     const val app = ":app"
 
-    object Features {
-        private const val prefix = ":features"
-        const val login = "$prefix:login"
-        const val game = "$prefix:game"
-        const val ranking = "$prefix:ranking"
-        const val about = "$prefix:about"
-    }
+    //features
+    const val login = ":features:login"
+    const val game = ":features:game"
+    const val ranking = ":features:ranking"
+    const val about = ":features:about"
 
-    object Libraries {
-        private const val prefix = ":libraries"
-        const val ui_components = "$prefix:ui_components"
-        const val actions = "$prefix:actions"
-    }
+    //libraries
+    const val ui_components = ":libraries:ui_components"
+    const val actions = ":libraries:actions"
 }
 
 object Libraries {

@@ -30,7 +30,7 @@ private fun configureDependencies(project: Project) {
     val androidTestImplementation = "androidTestImplementation"
 
     project.dependencies {
-        add(implementation, project(Modules.Libraries.ui_components))
+        add(implementation, project(Modules.ui_components))
 
         add(implementation, Libraries.appCompat)
         add(implementation, Libraries.constraintLayout)
