@@ -1,6 +1,6 @@
 ## Fishing simulator
 
-Android project to study modularization architecture
+Android project to study modularization architecture and material theme
 (work in progress...)
 
 Inspired by:
